@@ -7,6 +7,9 @@
 
 package frc.robot.subsystems;
 
+import com.ctre.phoenix.motorcontrol.can.WPI_TalonSRX;
+import com.ctre.phoenix.motorcontrol.can.WPI_VictorSPX;
+
 import edu.wpi.first.wpilibj.command.Subsystem;
 import frc.robot.commands.ExampleCommand;
 
@@ -16,6 +19,18 @@ import frc.robot.commands.ExampleCommand;
 public class ExampleSubsystem extends Subsystem {
   // Put methods for controlling this subsystem
   // here. Call these from Commands.
+  private WPI_TalonSRX leftLeader;
+  private WPI_TalonSRX rightLeader;
+
+  private WPI_VictorSPX leftFollower;
+  private WPI_VictorSPX rightFollower;
+
+  public ExampleSubsystem(){
+    super(); 
+
+
+
+  }
 
   @Override
   public void initDefaultCommand() {
