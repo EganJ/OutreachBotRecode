@@ -29,6 +29,7 @@ public class ExampleSubsystem extends Subsystem {
   public ExampleSubsystem(){
     super(); 
     leftLeader=new WPI_TalonSRX(RobotMap.LeftDriveLeader);
+    rightLeader=new WPI_TalonSRX(RobotMap.RightDriveLeader);
 
 
   }
